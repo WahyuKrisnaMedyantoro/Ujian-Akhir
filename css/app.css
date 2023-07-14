@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+* {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(0, 38, 50);
+
+
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgb(0, 108, 140);
+    padding: .8rem 0;
+    background-color: rgb(0, 67, 88);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+
+}
+
+.container .logo img {
+    padding-top: 3px;
+    width: 100px;
+    transition: all .2s ease-in-out;
+}
+
+.container .logo img:hover {
+    transform: scale(1.15);
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem 2rem;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul a {
+    color: #00BA60;
+    font-size: 1.05rem;
+    font-weight: 700;
+    padding: 0.3rem .7rem;
+    border-radius: 999px;
+    transition: all .4s ease-in-out;
+}
+
+nav ul a:hover {
+    background-color: #00BA60;
+    color: white;
+}
+
+main {
+    width: 100%;
+}
+
+main .home {
+    width: 100%;
+    margin: 3rem auto;
+    padding: 3.5rem 0;
+    background-color: rgb(0, 38, 50);
+}
+
+.home-container {
+    margin: 4rem auto;
+    display: flex;
+    align-items: center;
+    width: 85%;
+
+}
+
+.home-container h1 {
+    font-size: 3.5rem;
+    color: #00BA60;
+    line-height: 3.3rem;
+    margin: 1rem 0;
+}
+
+.home-container p {
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: white;
+    padding-inline-end: 4rem;
+}
+
+.home-container span {
+    color: #00BA60;
+    font-weight: bold;
+}
+
+.home-container img {
+    width: 300px;
+    margin: auto;
+}
+
+.home button {
+    display: block;
+    margin: 50px auto;
+    padding: .5rem 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.3rem;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    border-radius: 999px;
+    background-color: #00BA60;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.home button:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: rgb(0, 67, 88);
+
+}
+
+/* End of Home */
+
+main .product {
+    margin: 1rem 2rem;
+    padding: 1rem 2rem 2rem 2rem;
+    border-radius: 30px;
+    background-color: #00BA60;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px 2px black;
+}
+
+.product h1 {
+    align-self: center;
+    font-size: 2.3rem;
+    border-bottom: 3px solid white;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.product>p {
+    align-self: center;
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    align-self: center;
+    padding: 0 1rem;
+}
+
+.product .card {
+    margin: 1rem 1rem;
+    padding: 1.5rem 2rem;
+    background-color: rgb(0, 38, 50);
+    border-radius: 30px;
+    display: flex;
+    gap: 1.5rem;
+    box-shadow: 0 2px 8px 2px black;
+    align-items: center;
+}
+
+.product img {
+    width: 180px;
+    border-radius: 30px;
+    border: 5px solid #00BA60;
+}
+
+.description h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00BA60;
+    border-bottom: 3px solid #00BA60;
+}
+
+.description p {
+    font-size: 1rem;
+    color: white;
+    text-align: justify;
+    line-height: 1.4rem;
+    margin-top: .5rem;
+}
+
+.description button {
+    padding: .5rem .6rem;
+    margin-top: .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    border-radius: 999px;
+    background-color: #00BA60;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.description button:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: rgb(0, 67, 88);
+}
+
+/* End of Product */
+
+
+main .aboutme {
+    margin: 8rem 0 0 0;
+    padding: 1rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #00BA60;
+}
+
+.aboutme h1 {
+    align-self: center;
+    font-size: 2.3rem;
+    border-bottom: 3px solid white;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.aboutme .visi-misi {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.visi-misi section {
+    padding: 1.5rem;
+    background-color: rgb(0, 38, 50);
+    width: 350px;
+    border-radius: 30px;
+    margin-top: .5rem;
+}
+
+.visi-misi h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00BA60;
+    text-align: center;
+}
+
+.visi-misi p {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    line-height: 1.4rem;
+    margin-top: .5rem;
+}
+
+/* End of Visi Misi */
+
+
+main .contact {
+    padding: 8rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact h1 {
+    align-self: center;
+    font-size: 2.3rem;
+    border-bottom: 3px solid white;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.contact-container {
+    display: flex;
+    background-color: #00BA60;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+    box-shadow: 0 2px 8px 2px black;
+}
+
+aside section {
+    background-color: rgb(0, 38, 50);
+    margin: 1rem;
+    padding: 2rem 2rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px 2px black;
+    transition: all .2s ease-in;
+}
+
+aside section:hover {
+    transform: scale(1.1);
+}
+
+aside img {
+    width: 250px;
+    border-radius: 30px;
+    border: 5px solid white;
+    margin: 0 0 .3rem 0;
+}
+
+aside section h2 {
+    font-size: 2rem;
+    border-bottom: 3px solid #00BA60;
+    font-weight: bold;
+    color: #00BA60;
+    text-align: center;
+}
+
+aside section span {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    align-self: center;
+    margin-top: .5rem;
+
+}
+
+aside section p {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    margin-top: .5rem;
+}
+
+.contact-container .profil {
+    background-color: rgb(0, 38, 50);
+    margin: 1rem;
+    padding: 2rem 2rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px 2px black;
+    transition: all .2s ease-in;
+}
+
+.contact-container .profil:hover {
+    transform: scale(1.1);
+}
+
+.contact-container .profil h2 {
+    font-size: 2rem;
+    border-bottom: 3px solid #00BA60;
+    font-weight: bold;
+    color: #00BA60;
+    text-align: center;
+}
+
+.contact-container .profil span {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    align-self: center;
+    margin-top: .5rem;
+}
+
+.contact-container .profil p {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    margin-top: .5rem;
+}
+
+footer {
+    background-color: #00BA60;
+    padding: 1.2rem;
+    margin-top: 4rem;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* End of Footer */
+@media screen and (max-width: 1000px) {
+    .contact .contact-container {
+        flex-direction: column;
+    }
+
+    .contact .contact-container .profil {
+        margin-top: -40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        font-size: 85%;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    .container nav {
+        margin-top: 1rem;
+    }
+
+    .content .home-container {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .home-container .dua {
+        order: -1;
+        margin: 1rem;
+    }
+
+    .product .card {
+        flex-direction: column;
+    }
+
+    .aboutme .visi-misi {
+        flex-direction: column;
+        margin: auto;
+    }
+
+}
